@@ -13,7 +13,7 @@ import Guilherme from '../img/Guilherme.png';
 import Gustavo from '../img/Gustavo.png';
 import Igor from '../img/Igor.png';
 import Belga from '../img/Belga.png';
-import Menino from '../img/Joao.png';
+import Menino from '../img/Menino.png';
 import Joao from '../img/Joao.png';
 import Leonardo from '../img/Leonardo.png';
 import Leticia from '../img/Leticia.png';

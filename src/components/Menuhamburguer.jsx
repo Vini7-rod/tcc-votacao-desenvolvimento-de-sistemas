@@ -14,6 +14,7 @@ export default function MenuHamburguer() {
       <nav id="navigation-menu" className={menuOpen ? "visibilidade" : ""}>
         <img src={labo} alt="Labo" className="labo" />
         <ul>
+          <li><Link to="/">INICIO</Link></li>
           <li><Link to="/ranking">RANKING</Link></li>
           <li><Link to="/sobre">SOBRE NÓS</Link></li>
         </ul>

@@ -6,7 +6,7 @@ import onda from "../img/onda.png";
 import styles from "../pages/App.module.css";
 import Menuhamburguer from "../components/Menuhamburguer";
 
-export default function App() {
+export default function inicio() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -19,9 +19,9 @@ export default function App() {
         <div className={styles.subtituloApp}>Selecione a série do Projeto</div>
 
         <nav className={styles.buttons}>
-          <Link to="/votacao?serie=1"><button>1º Série</button></Link>
-          <Link to="/votacao?serie=2"><button>2º Série</button></Link>
-          <Link to="/votacao?serie=3"><button>3º Série</button></Link>
+          <Link to="/ESCOLHA"><button>1º Série</button></Link>
+          <Link to="/ESCOLHA"><button>2º Série</button></Link>
+          <Link to="/ESCOLHA"><button>3º Série</button></Link>
         </nav>
       </div>
 
