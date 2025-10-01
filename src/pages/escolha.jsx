@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import Menuhamburguer from "../components/Menuhamburguer";
+import ProjetoCard from "../components/card.jsx";
 import styles from '../pages/escolha.module.css';
 
 function useQuery() {
@@ -9,7 +10,7 @@ function useQuery() {
 
 export default function Escolha() {
   const query = useQuery();
-  const serie = query.get("serie"); 
+  const serie = query.get("serie");
 
   return (
     <div className={styles.principal}>
@@ -18,28 +19,14 @@ export default function Escolha() {
       <p className={styles.rodape}>VOTE NO SEU PROJETO FAVORITO</p>
 
       <div className={styles.grid}>
-        <div className={`${styles.card} ${styles.selecionado}`}>
-          <h2>Bagulho que brilha</h2>
-          <div className={styles.progress}>
-            <div className={styles.fill} style={{ width: "60%" }}></div>
-          </div>
-        </div>
-
-        <div className={styles.card}>
-          <h2>Bagulho que reluz</h2>
-          <div className={styles.progress}>
-            <div className={styles.fill} style={{ width: "30%" }}></div>
-          </div>
-        </div>
-
-        <div className={styles.card}>
-          <h2>Bagulho que solta luz</h2>
-          <div className={styles.progress}>
-            <div className={styles.fill} style={{ width: "80%" }}></div>
-          </div>
-        </div>
+        <ProjetoCard titulo="" percentual={60} selecionado />
+        <ProjetoCard titulo="" percentual={30} />
+        <ProjetoCard titulo="" percentual={80} />
+        <ProjetoCard titulo="" percentual={80} />
+        <ProjetoCard titulo="" percentual={80} />
+        <ProjetoCard titulo="" percentual={80} />
+        <ProjetoCard titulo="" percentual={80} />
       </div>
     </div>
   );
 }
-
