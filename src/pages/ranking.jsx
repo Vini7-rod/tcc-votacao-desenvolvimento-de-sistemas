@@ -2,12 +2,14 @@ import React from "react";
 import styles from '../pages/ranking.module.css';
 import noimage from '../img/noimage.png'
 import Menuhamburguer from "../components/Menuhamburguer";
-
+import {useState, useEffect} from 'react'
 const rankingData = [
   { pos: 2, nome: "Coisa Brilhante", turma: "1°A", img: "/img/img2.jpg" },
   { pos: 1, nome: "Coisa Brilhante", turma: "3°C", img: "/img/img1.jpg" },
   { pos: 3, nome: "Outra Coisa Brilhante", turma: "2°ADM", img: "/img/img3.jpg" },
 ];
+
+
 
 export default function Ranking() {
   return (

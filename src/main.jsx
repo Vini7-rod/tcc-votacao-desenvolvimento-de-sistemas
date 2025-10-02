@@ -6,6 +6,8 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Sobre from './pages/sobre.jsx'
 import Escolha from './pages/escolha.jsx'
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
