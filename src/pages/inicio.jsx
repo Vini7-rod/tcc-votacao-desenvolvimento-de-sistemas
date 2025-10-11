@@ -19,10 +19,16 @@ export default function inicio() {
         <div className={styles.subtituloApp}>Selecione a série do Projeto</div>
 
         <nav className={styles.buttons}>
-          <Link to="/ESCOLHA" onClick={localStorage.setItem("serie", 1)}><button>1º Série</button></Link>
-          <Link to="/ESCOLHA" onClick={localStorage.setItem("serie", 2)}><button>2º Série</button></Link>
-          <Link to="/ESCOLHA" onClick={localStorage.setItem("serie", 3)}><button>3º Série</button></Link>
-        </nav>
+        <Link to="/ESCOLHA" onClick={() => localStorage.setItem("serie", 1)}>
+  <button>1º Série</button>
+</Link>
+<Link to="/ESCOLHA" onClick={() => localStorage.setItem("serie", 2)}>
+  <button>2º Série</button>
+</Link>
+<Link to="/ESCOLHA" onClick={() => localStorage.setItem("serie", 3)}>
+  <button>3º Série</button>
+</Link>
+</nav>
       </div>
 
       <img src={onda} alt="onda" className={styles.onda} />

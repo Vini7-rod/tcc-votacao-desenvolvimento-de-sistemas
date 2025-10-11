@@ -48,7 +48,7 @@ export default function Escolha() {
   return (
     <div className={styles.principal}>
       <Menuhamburguer />
-      <h1 className={styles.tituloEscolha}>Turma {serie}°A</h1>
+      <h1 className={styles.tituloEscolha}> {serie} ano</h1>
       <p className={styles.rodape}>VOTE NO SEU PROJETO FAVORITO</p>
 
       <div className={styles.grid}>
